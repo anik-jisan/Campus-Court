@@ -7,6 +7,7 @@
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
+
 *{
     font-family: 'Nunito', sans-serif;
     margin:0; padding:0;
@@ -35,15 +36,7 @@ header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
 }
-/* img{
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 10%;
-} */
-/* header .logo i{
-    color: var(--green);
-} */
+
 
 header .navbar a{
     font-size: 1.7rem;
@@ -64,3 +57,11 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+
+.icons{
+    width: 100px;
+    color: #192a56;
+} 
+
+.a a{
+    font-size: 1.5rem!important;

@@ -7,8 +7,9 @@
 
   <title>Campus Court</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="images/logo.png" type="image/icon">
   <link rel="stylesheet" href="css/style.css">
 
@@ -22,32 +23,73 @@
 
   <header>
 
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>Campus Court</a>
-    <!-- <div id="header"> <img src="images/logo.png" alt="logo"> -->
+    <!-- <a href="#" class="logo"><i class="fas fa-utensils"></i>Campus Court</a> -->
 
 
 
-    <nav class="navbar">
-      <a class="active" href="#home">home</a>
-      <a href="#blog">blog</a>
-      <a href="#forum">forum</a>
-      <a href="#buyproducts">buy products</a>
-      <a href="#about">about</a>
+    <nav class="navbar navbar-light bg-light a">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Campus Court
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Forum</a>
+                <a class="nav-link disabled">About Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </nav>
 
+
+
+
+
     <div class="icons">
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fa fa-bars"></i>
+
+      <!--       
       <i class="fas fa-bars" id="bars"></i>
       <i class="fa-solid fa-cart-shopping"></i>
       <i class="fas fa-search" id="search-icon"></i>
       <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a> -->
     </div>
-    
+
   </header>
 
   <!-- header section ends-->
 
   <script src="js/script.js"></script>
+
+  <!-- bootstrap js, jquery, popper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
 </body>
 
 </html>
