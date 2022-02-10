@@ -1,34 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* variable define */
 :root{
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
     --green:#27ae60;
     --yellow: #ffff00;
     --black:#192a56;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --primary-font: 'Roboto', sans-serif;
 }
 
-*{
-    font-family: 'Nunito', sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none; border:none;
-    text-transform: capitalize;
-    transition: all .2s linear;
+html{
+    font-size: 100%;
+    font-weight: 400;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
 }
 
-header .logo{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bolder;
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
 }
 
+/* ===============
+header design
+=============== */
 
 header .navbar a{
     font-size: 1.5rem;
-    border-radius: .5rem;
-    padding: 0.1rem;
-    color: var(--yellow);
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black);
+    letter-spacing: 1px;
+    border-radius: .7rem;
+    
 }
 
 header .navbar a.active,
@@ -37,19 +46,87 @@ header .navbar a:hover{
     background: var(--yellow);
 }
 
-html{
-    font-size: 100%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
 }
 
-.icons{
-    width: 100px;
-    color: #192a56;
-} 
+.navigation-wrap .main-btn{
+    padding: .3rem 1.5rem;
+    box-shadow: none;
+    margin-left: 1.5rem;
+}
 
-.nav-color{
-    background-color:rgb(34, 95, 110);
- 
+
+/* =====================
+custom scrollbar 
+===================== */
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--black);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+
+/* change navigation styling on scroll */
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0,0,0,0.2);
+}
+/* ===================
+top-banner design 
+=================== */
+
+.top-banner{
+    width: 100%;
+    /* background: url('../images/banner1.jpg') no-repeat center; */
+    background-size: cover;
+    padding: 3rem;
+}
+
+/* ==================
+custom css
+================== */
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 1.2rem 1.5rem;  /*yx*/
+    line-height: 1.5rem;
+    background-color: var(--yellow);
+    border: 0.18rem solid var(--black);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    -webkit-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color: red;
+    color: #fff;
 }
