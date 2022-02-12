@@ -65,7 +65,7 @@ custom scrollbar
 ===================== */
 
 ::-webkit-scrollbar{
-    width: 0.625rem;
+    width: 0.5rem;
 }
 ::-webkit-scrollbar-track{
     background: var(--black);
@@ -96,6 +96,11 @@ top-banner design
     padding: 3rem;
 }
 
+.sidebar-img img{
+height: 460px;
+margin-left: 100px;
+box-shadow: 0 0.125rem 1.75rem 0 rgba(0,0,0,0.2);
+}
 /* ==================
 custom css
 ================== */
