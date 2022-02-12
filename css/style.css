@@ -91,7 +91,6 @@ top-banner design
 
 .top-banner{
     width: 100%;
-    /* background: url('../images/banner1.jpg') no-repeat center; */
     background-size: cover;
     padding: 3rem;
 }
@@ -135,4 +134,48 @@ p{
 .main-btn:hover{
     background-color: red;
     color: #fff;
+}
+
+
+/* ===============
+footer css
+=============== */
+
+.footer .box-container{
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding: 5 rem 0;
+    font-size: 2.5 rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .1rem 0;
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--primary-color);
 }
